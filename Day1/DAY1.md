@@ -57,10 +57,10 @@ int main() {
 	return 0;
 }
 ```
-//consts are set at compile time, so when we refer them in the code, the value wil be a literal and 
+Consts are set at compile time, so when we refer them in the code, the value wil be a literal and 
 there will be no need to evaluate the value again by the runtime, thus making it more optimized compared to normal variables 
 which are extracted everytime U refer them in the code. 
-//It is recommended to name a const with UPPERCASE. 
+It is recommended to name a const with UPPERCASE. 
 
 **Output**
 ```
