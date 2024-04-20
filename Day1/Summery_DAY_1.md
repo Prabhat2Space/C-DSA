@@ -97,3 +97,62 @@ A variable is created based on the type of data, so data types play an important
 
 printf looks for format specifier while printing variables. %d for digits, %f for floating points, %lf for double,
 %c for charecters, %s for strings. strings are not the part of primitive data types of C. They are type defs and are like Arrays. 
+
+This program demonstrates the usage of the `scanf()` and `fgets()` functions in C programming to take input from the user:
+
+```c
+#include<stdio.h>
+
+int main() {
+    int num;
+    float fTest;
+    char strName[50]; // Array to store a string
+
+    // Prompting the user to enter a name
+    printf("Enter the Name: ");
+    
+    // Using fgets() to read a string with spaces
+    fgets(strName, sizeof(strName), stdin);
+
+    // Printing the entered name
+    printf("The name is %s", strName);
+
+    return 0;
+}
+```
+## Code4 : Program demonstrates the usage of the scanf() and fgets() functions
+
+```c
+#include<stdio.h>
+
+int main() {
+    int num;
+    float fTest;
+    char strName[50]; // Array to store a string
+// Prompting the user to enter a name
+    printf("Enter the Name: ");
+    // Using fgets() to read a string with spaces
+    fgets(strName, sizeof(strName), stdin);
+// Printing the entered name
+    printf("The name is %s", strName);
+    return 0;
+}
+```
+**Output**
+```
+Enter the Name: Admiral Prabhat
+The name is Admiral Prabhat
+```
+
+Explanation:
+- In this program, we use the `fgets()` function to read a string input from the user, including spaces.
+- The `fgets()` function reads input from the standard input stream (`stdin`) and stores it into the character array `strName`.
+- The `sizeof(strName)` parameter specifies the maximum number of characters that `fgets()` can read, preventing buffer overflow.
+- After reading the input, the program prints the entered name using the `printf()` function.
+
+`fgets()` vs `scanf()`:
+- `fgets()` is preferred for reading string inputs because it can handle spaces and prevents buffer overflow, unlike `scanf()`.
+- `scanf()` has limitations in handling spaces, and it may discard characters after encountering a space or newline character.
+- By using `fgets()`, we ensure that the entire input line, including spaces, is read and stored in the character array.
+
+In this program, the commented-out lines demonstrate how `scanf()` can be used to read other types of inputs like integers and floating-point numbers. However, `scanf()` is not recommended for reading string inputs due to its limitations in handling spaces and potential buffer overflow issues.
