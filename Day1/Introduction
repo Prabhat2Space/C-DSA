@@ -1,25 +1,35 @@
-Data Structures in C.
-What is C Programming language?
+# Data Structures in C.
+
+##Data Structures in C.
+
+## What is C Programming language?
+
+```c
 C is a mid level programming language that makes the assembly language work much easier. Developed by Dennis Ritchie in 1972 at BELL LABS. 
 It is a Procedural Programming language. It can divide your program into small units called Functions, Multiple sets of data as structures. 
 It can be programmed using a Text editor and saved with extension .c or .h. In older times, UNIX, Windows, MYSQL, RDBMS software was built using C language.
 
-What is the difference b/w C and C++?
+```
+**What is the difference b/w C and C++?**
+```
 C++ is an extension of C language with a new feature called Object Oriented Programming. It is also called as C with Classes. It is a very similar syntax like C language.
+```
 
-What is required for a programming language to be used?
+**What is required for a programming language to be used?**
+```
 Every programming language has a set of grammer based on which U write the code(Statements). This is called as SYNTAX. 
 A sp software will be available to read UR statements, convert them into assembly language and make it run on the Computer as per the statements written by you. 
 This is called COMPILER. GCC, Windows C are some of the popular compilers available for C language. U can also use Online Compilers that can execute on browsers. 
 So to write the code, we need a Text editor like Notepad and to compile the code we need a Compiler like GCC, Windows, Visual Studio or many more.
 In real time, we use Integrated Development Environment(IDE) for developing Complex programs. For C,C++ and its family MS Windows gives Visual Studio.
 It is free and easily downloadable.
-
-How to start C Programming?
+```
+**How to start C Programming?**
+```
 Download a popular IDE like Visual Studio and create a project In the project type, select Console Application or Empty Project.
 Add Files into the Source Files. All C files are saved with extension .c. Build the Application for Compilation and Execute it.
 Short cuts: Ctrl + Shift + B -> Build the Project. Ctrl +F5 -> Execute the project.
-
+```
 ///////////////////////////Data Structures in C//////////////////////////////////////
 
 What is a Data Structure?
