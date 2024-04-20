@@ -1,4 +1,4 @@
-## User input to calculate the average marks and displays the list of all entered marks.
+## Code1: User input to calculate the average marks and displays the list of all entered marks.
 
 ```c
 #include<stdio.h>
