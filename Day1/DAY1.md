@@ -45,7 +45,7 @@ Marks at 4: 85
 Marks at 5: 95
 
 ```
-## Code2 : Demonstrates the usage of const keyword in C programming
+## Code2 : Demonstrates the usage of const keyword in C
 ```c
 #include<stdio.h>
 //const helps in storing values that are not intended to be modified. It will be unchangable and readonly. 
@@ -66,3 +66,34 @@ It is recommended to name a const with UPPERCASE.
 ```
 123
 ```
+
+## Code3 : use of variables and data types in C 
+```c
+#include<stdio.h>
+
+int main() {
+    // Declaring and initializing variables
+    int myNum = 123;   // Integer variable to store whole numbers
+    float fNum = 4356.56;   // Floating-point variable to store decimal numbers
+    char myChar = 'P';   // Character variable to store single characters
+    // Printing the values of variables
+    printf("%d\n", myNum);   // %d is used as the format specifier for integers
+    printf("%f\n", fNum);   // %f is used as the format specifier for floating-point numbers
+    printf("%c\n", myChar);   // %c is used as the format specifier for characters
+    return 0;
+}
+```
+**Output**
+```
+123
+4356.560059
+P
+```
+Any kind of data that is required for computing the program should be stored into locations called VARIABLES. 
+Every variable has to be declared before being using. 
+The variable is created using format specifier. It means that a variable of a certain kind, can store data of that kind only
+A variable can hold only one data at a time.
+A variable is created based on the type of data, so data types play an important role in creating the variable. 
+
+printf looks for format specifier while printing variables. %d for digits, %f for floating points, %lf for double,
+%c for charecters, %s for strings. strings are not the part of primitive data types of C. They are type defs and are like Arrays. 
