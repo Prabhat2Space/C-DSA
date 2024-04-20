@@ -3,7 +3,7 @@ C DAC High Performance Computing
 
 # Data Structures in C.
 
-##Data Structures in C.
+## Data Structures in C.
 
 ## What is C Programming language?
 
