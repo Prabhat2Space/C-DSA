@@ -1,4 +1,4 @@
-## Code 1 : use of recursion to calculate powers and illustrates basic input-output operations in C 
+## Code 1 : Demonstrates use of recursion for calculate powers and illustrates basic input-output operations in C 
 
 ```c
 
