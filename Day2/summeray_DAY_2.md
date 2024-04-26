@@ -615,7 +615,11 @@ Explanation of the code:
      - First, it moves `n-1` disks from the `from_rod` to the `aux_rod`, using `to_rod` as the auxiliary rod.
      - Then, it moves the remaining disk (the largest one) from the `from_rod` to the `to_rod`.
      - Finally, it recursively moves the `n-1` disks from the `aux_rod` to the `to_rod`, using `from_rod` as the auxiliary rod.
+
 2. The `main` function takes input from the user for the number of disks (`n`).
+
 3. It initializes the rod numbers (`from_rod`, `to_rod`, `aux_rod`) as 1, 3, and 2 respectively.
+
 4. It calls the `hanoi` function with the input parameters (`n`, `from_rod`, `to_rod`, `aux_rod`).
+
 5. The `hanoi` function recursively solves the Tower of Hanoi problem by moving disks from one rod to another, following the rules of the puzzle. It prints each movement step to the console, indicating which disk is moved and from which rod to which rod.
