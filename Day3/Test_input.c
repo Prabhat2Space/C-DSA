@@ -40,10 +40,10 @@ void deleteAtPosition();
 int main(){
 	char str[5][50]={
 		"1001,Prabhat Shinde,192834.234", 
-		"1002,Vaibhav Ranashoor,52324.234", 
-		"1003,Vipul Jambhulkar,5234.23",
-		"1004,Mukund Waghmare,5234.234",
-		"1005,Vaibhav Gaikwad,5234.2234"
+		"1002,Elon Musk,52324.234", 
+		"1003,Jeff Bezos,5234.23",
+		"1004,Larry Ellison,5234.234",
+		"1005,Linus Torvalds,5234.2234"
 	};
 	
 	for(int i=0; i<ROW; i++){
@@ -133,6 +133,3 @@ void deleteAtPosition(){
 	temp->ptr=NULL;
 	free(temp);
 }
-
-
-
