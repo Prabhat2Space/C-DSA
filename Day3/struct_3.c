@@ -14,7 +14,7 @@ int main(){
 	struct Employee *ptr = malloc(sizeof(struct Employee));
 	if(ptr != NULL){
 		ptr->id = 1001;
-		strcpy(ptr->name, "Veera Raghava Reddy");
+		strcpy(ptr->name, "Manoj Kumar Pandey");
 		ptr->salary = 78000.12;
 	// using arrow operator to print variables from a struct pointer
 	printf("ID: %d\tName: %s\tSal:%.2lf\n", ptr->id, ptr->name, ptr->salary);
