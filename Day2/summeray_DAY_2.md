@@ -29,16 +29,19 @@ Enter the base and the exponent (both non-negative integer):
 
 
 ```
-** From a compiler's point of view, let's analyze the given C code and explain the concepts used in it: **
+From a compiler's point of view, analyze the given C code and explain the concepts used in it:
 
-** Header Inclusion: The code begins with #include<stdio.h>, which is a preprocessor directive to include the standard input-output library in the program.
+Header Inclusion: The code begins with #include<stdio.h>, which is a preprocessor directive to include the standard input-output library in the program.
 This allows the program to use functions like printf() and scanf().
+
 Function Declaration: The code defines a function power() that calculates the power of a base number raised to an exponent.
 The function takes two parameters, base and expo, both of type long long, and returns a long long value. This function recursively computes the power using repeated multiplication.
 Recursion: The power() function uses recursion to compute the power. It checks if the exponent is 0, in which case it returns 1 (base case). Otherwise, it multiplies the base by the result of power(base, expo-1).
+
 Input and Output: In the main() function, the program prompts the user to enter the base and the exponent using printf() and reads the input using scanf(). 
 It then calls the power() function with the provided base and exponent, and prints the result using printf().
-Integer Overflow: It's worth noting that this code may encounter integer overflow for large inputs, especially for the result of base^expo. Since the return type and input types are long long, it mitigates the risk, but care should be taken when dealing with very large exponents. **
+
+Integer Overflow: It's worth noting that this code may encounter integer overflow for large inputs, especially for the result of base^expo. Since the return type and input types are long long, it mitigates the risk, but care should be taken when dealing with very large exponents.
 
 ## Code 2 : Code to generate a Fibonacci series up to the nth term
 ```c
@@ -62,18 +65,6 @@ void main(){
 	}
 }
 ```
-Header files:
-#include<stdio.h>: This header file is included to use the standard input-output functions like printf and scanf.
-#include<string.h>: This header file is included, but it's not necessary for this code.
-Function fibo:
-This function calculates the nth Fibonacci number recursively.
-If the input num is 0 or 1, it returns num itself (base cases).
-Otherwise, it recursively calls itself with num-1 and num-2 and returns the sum of the results.
-Main function:
-It prompts the user to enter the value of n (the number of terms in the Fibonacci series).
-It reads the value of n from the user.
-It then iterates from 0 to n-1 and prints the index (starting from 1) along with the corresponding Fibonacci number calculated using the fibo function.
-
 **Output**
 ```
 Enter the n-th term till where you want to generate the Fibonacci series:
@@ -90,6 +81,21 @@ Fibonacci series is as follows:
 9 ----> 21
 10 ----> 34
 ```
+Header files:
+#include<stdio.h>: This header file is included to use the standard input-output functions like printf and scanf.
+#include<string.h>: This header file is included, but it's not necessary for this code.
+
+Function fibo:
+This function calculates the nth Fibonacci number recursively.
+If the input num is 0 or 1, it returns num itself (base cases).
+Otherwise, it recursively calls itself with num-1 and num-2 and returns the sum of the results.
+
+Main function:
+It prompts the user to enter the value of n (the number of terms in the Fibonacci series).
+It reads the value of n from the user.
+It then iterates from 0 to n-1 and prints the index (starting from 1) along with the corresponding Fibonacci number calculated using the fibo function.
+
+
 
 ## Code 3 : Control flow of functions in C 
 ```c
@@ -147,19 +153,23 @@ funthree() called.
 Function Definitions:
 The code defines five functions: main(), fun(), funOne(), funTwo(), and funThree().
 Each function is responsible for printing a message indicating its entry and exit points.
+
 Main Function:
 main() serves as the entry point of the program.
 It prints "1. in main()" and then calls the function fun().
 After fun() returns, it prints "2. in main()" and exits.
+
 Function Calls:
 fun() calls funOne().
 funOne() calls funTwo().
 funTwo() calls funThree().
+
 Control Flow:
 The flow of execution starts from main().
 It calls fun(), which in turn calls funOne(), funTwo(), and funThree() sequentially.
 After funThree() finishes executing, control returns back to funTwo(), and then to funOne() and finally to fun().
 Once fun() completes execution, control returns to main().
+
 Output:
 The output of the program shows the sequence of function calls and their respective entry and exit points.
 Each function prints a message when it is entered and when it is about to exit.
@@ -196,17 +206,21 @@ Factorial of 10 is 3628800
 
 Function Definitions:
 The code defines a function fact() that calculates the factorial of a given number recursively.
+
 Main Function:
 The main() function serves as the entry point of the program.
 It prompts the user to enter a number for which the factorial needs to be calculated.
 It then reads the input number and calls the fact() function to calculate the factorial.
 Finally, it prints the calculated factorial.
+
 Function Call:
 The fact() function is called recursively to calculate the factorial.
+
 Control Flow:
 The flow of execution starts from the main() function.
 It takes user input, calls the fact() function to calculate the factorial, and then prints the result.
 The fact() function recursively calls itself until the base case is reached (when f <= 1), and then returns the factorial value.
+
 Output:
 The output of the program shows the factorial of the input number provided by the user.
 
