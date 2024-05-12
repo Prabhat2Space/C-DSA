@@ -1,0 +1,77 @@
+Day 6:
+-------------
+Demo on circular linked list
+Introduction to Trees
+	Binary Trees
+	Binary Search Tree
+		Introduction and implementation
+
+	Sorting Techniques:
+		Merge Sort
+		Quick Sort
+		Heap Sort
+
+
+What is the need of binary trees?
+
+Linked list is a linear DS and only allows linear search.
+Binary search is a performance optimization over linear search.
+Therefore, binary search trees are better way to store data if,
+searching data efficiently is a high priority.
+
+A complete binary tree is a binary tree in which every level, 
+except possibly the last, is completely filled, 
+and all nodes in the last level are as far left as possible. 
+It can have between 1 and 2^h nodes at the last level h. 
+A complete binary tree can be efficiently represented as an array.
+
+A perfect binary tree is a binary tree in which 
+all interior nodes have two children and all leaves have the same depth or same level 
+(the level of a node defined as the number of edges or links from the root node to a node). 
+A perfect binary tree is a full binary tree.
+A perfect tree is therefore always complete but a complete tree is not always perfect.
+
+AVL and Red Black trees are not covered in this module.
+
+
+see for more info: https://en.wikipedia.org/wiki/Binary_tree
+
+==================================================================
+
+Notes on compilation process:
+
+C compiler is said to be a 2 phase compiler.
+----------------------------------------------
+
+program --> (ASCII) --> first.c
+ |
+ |---> Pre-Processing (preprocessing related errors)
+ |
+Source code --> first.i  (aka intermediary code after preprocessor directives are processed)
+ |
+ | --> Compilation (Phase I) --> .s file --> declarations (declaration related errors)
+ |
+Object Code --> first.o/first.obj
+ |
+ | --> Linking (Phase II) --> definition (definition related errors)
+ |
+ V
+Executable --> (Binary) --> a.out 
+
+three temp files are deleted and only a.out file is kept as its the executable.
+
+in order to save temp files like .i, .s, .o
+use flag -save-temps
+like:
+gcc -save-temps filename.c
+
+for only .i => -e
+for only .s => -S
+for only .o => -o
+
+for more compiler options:
+http://www.cs.fsu.edu/~baker/ada/gnat/html/gcc_3.html
+
+========================================================================
+
+1 question from C, 1 from Data Structure (No binary tree)
